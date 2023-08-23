@@ -14,13 +14,14 @@ import {
   MenubarSubTrigger,
   MenubarTrigger,
 } from "@/components/ui/menubar";
+import Link from "next/link";
 
 export function Menu() {
   return (
     <Menubar className="rounded-none border-b border-none px-2 lg:px-4">
       <MenubarMenu>
         <MenubarTrigger className="font-bold">
-          IR subspeciality Log System
+          <Link href="/">IR subspeciality Log System</Link>
         </MenubarTrigger>
       </MenubarMenu>
       <div className="ml-auto">
