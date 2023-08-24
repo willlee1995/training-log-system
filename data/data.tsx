@@ -7,23 +7,76 @@ import {
   CrossCircledIcon,
   QuestionMarkCircledIcon,
   StopwatchIcon,
-} from "@radix-ui/react-icons"
+} from "@radix-ui/react-icons";
+import { Brain, Heart, Syringe } from "lucide-react";
 
 export const labels = [
   {
-    value: "bug",
-    label: "Bug",
+    value: "A",
+    label: "Tier A",
   },
   {
-    value: "feature",
-    label: "Feature",
+    value: "B",
+    label: "Tier B",
+  },
+];
+export const categories = [
+  {
+    value: "Neuro",
+    label: "Neurointerventional procedures",
+    icon: QuestionMarkCircledIcon,
   },
   {
-    value: "documentation",
-    label: "Documentation",
+    value: "Arterial",
+    label: "Arterial interventional procedures",
+    icon: QuestionMarkCircledIcon,
   },
-]
-
+  {
+    value: "Venous",
+    label: "Venous and dialysis access interventions",
+    icon: QuestionMarkCircledIcon,
+  },
+  {
+    value: "Hepatobiliary",
+    label: "Hepatobiliary interventions",
+    icon: QuestionMarkCircledIcon,
+  },
+  {
+    value: "Thoracic",
+    label: "Thoracic interventions",
+    icon: QuestionMarkCircledIcon,
+  },
+  {
+    value: "Urogenital",
+    label: "Urogenital interventions",
+    icon: QuestionMarkCircledIcon,
+  },
+  {
+    value: "Musculoskeletal",
+    label: "Musculoskeletal interventions",
+    icon: QuestionMarkCircledIcon,
+  },
+  {
+    value: "Paediatric",
+    label: "Paediatric interventions",
+    icon: QuestionMarkCircledIcon,
+  },
+  {
+    value: "Oncology",
+    label: "Interventional Oncology",
+    icon: QuestionMarkCircledIcon,
+  },
+  {
+    value: "VA",
+    label: "Vascular anomalies",
+    icon: QuestionMarkCircledIcon,
+  },
+  {
+    value: "MR",
+    label: "MR guided interventions",
+    icon: <Heart />,
+  },
+];
 export const statuses = [
   {
     value: "backlog",
@@ -50,7 +103,7 @@ export const statuses = [
     label: "Canceled",
     icon: CrossCircledIcon,
   },
-]
+];
 
 export const priorities = [
   {
@@ -68,4 +121,4 @@ export const priorities = [
     value: "high",
     icon: ArrowUpIcon,
   },
-]
+];

@@ -14,7 +14,7 @@ import { PodcastEmptyPlaceholder } from "@/components/podcast-empty-placeholder"
 import { columns } from "@/components/table/columns";
 import { listenNowAlbums, madeForYouAlbums } from "@/data/albums";
 import { playlists } from "@/data/playlists";
-import { taskSchema } from "@/data/schema";
+import { logSchema } from "@/data/schema";
 import { promises as fs } from "fs";
 import Link from "next/link";
 import path from "path";
@@ -27,7 +27,7 @@ async function getTasks() {
 
   const tasks = JSON.parse(data.toString());
 
-  return z.array(taskSchema).parse(tasks);
+  return z.array(logSchema).parse(tasks);
 }
 export default async function MainPage() {
   const tasks = await getTasks();

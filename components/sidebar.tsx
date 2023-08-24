@@ -23,9 +23,11 @@ export function Sidebar({ className }: SidebarProps) {
         </div>
         <div className="px-3 py-2">
           <div className="space-y-1">
-            <Button variant="ghost" className="w-full justify-start">
-              My progress summary
-            </Button>
+            <Link href="/">
+              <Button variant="ghost" className="w-full justify-start">
+                My progress summary
+              </Button>
+            </Link>
             <Button variant="ghost" className="w-full justify-start">
               Neurointerventional procedures
             </Button>
