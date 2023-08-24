@@ -181,7 +181,7 @@ export function AddProcedureForm() {
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger>
-                    <SelectValue placeholder="Select a role in this case" />
+                    <SelectValue placeholder="Select a tier in this case" />
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
@@ -189,7 +189,7 @@ export function AddProcedureForm() {
                   <SelectItem value="B">Tier B</SelectItem>
                 </SelectContent>
               </Select>
-              <FormDescription>Select Tier for the case</FormDescription>
+
               <FormMessage />
             </FormItem>
           )}
@@ -238,7 +238,7 @@ export function AddProcedureForm() {
                   <SelectItem value="MR">MR guided interventions</SelectItem>
                 </SelectContent>
               </Select>
-              <FormDescription>Select Category for the case</FormDescription>
+
               <FormMessage />
             </FormItem>
           )}

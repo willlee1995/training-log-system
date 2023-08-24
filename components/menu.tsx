@@ -15,7 +15,7 @@ import {
   MenubarTrigger,
 } from "@/components/ui/menubar";
 import Link from "next/link";
-
+import ModeToggle from "./mode-toggle";
 export function Menu() {
   return (
     <Menubar className="rounded-none border-b border-none px-2 lg:px-4">
@@ -36,6 +36,11 @@ export function Menu() {
           </MenubarContent>
         </MenubarMenu>
       </div>
+      <MenubarMenu>
+        <MenubarTrigger className="font-bold">
+          <ModeToggle />
+        </MenubarTrigger>
+      </MenubarMenu>
     </Menubar>
   );
 }

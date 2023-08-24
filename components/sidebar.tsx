@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
+import { Plus } from "lucide-react";
 import Link from "next/link";
 import { Playlist } from "../data/playlists";
-
 interface SidebarProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export function Sidebar({ className }: SidebarProps) {
@@ -14,6 +15,7 @@ export function Sidebar({ className }: SidebarProps) {
           <div className="space-y-1">
             <Link href="/addProcedure">
               <Button variant="secondary" className="w-full justify-start">
+                <Plus />
                 Add procedure
               </Button>
             </Link>
@@ -62,6 +64,7 @@ export function Sidebar({ className }: SidebarProps) {
             </Button>
           </div>
         </div>
+        <Separator orientation="vertical" />
       </div>
     </div>
   );

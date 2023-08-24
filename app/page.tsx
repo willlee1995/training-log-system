@@ -6,19 +6,31 @@ import { Button } from "@/components/ui/button";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { z } from "zod";
 
 import { AlbumArtwork } from "@/components/album-artwork";
+import { DataTable } from "@/components/data-table";
 import { PodcastEmptyPlaceholder } from "@/components/podcast-empty-placeholder";
+import { columns } from "@/components/table/columns";
 import { listenNowAlbums, madeForYouAlbums } from "@/data/albums";
 import { playlists } from "@/data/playlists";
+import { taskSchema } from "@/data/schema";
+import { promises as fs } from "fs";
 import Link from "next/link";
-
+import path from "path";
 export const metadata: Metadata = {
   title: "IR Training Log System",
   description: "HKCR IR subspeciality training log system",
 };
+async function getTasks() {
+  const data = await fs.readFile(path.join(process.cwd(), "/data/tasks.json"));
 
-export default function MusicPage() {
+  const tasks = JSON.parse(data.toString());
+
+  return z.array(taskSchema).parse(tasks);
+}
+export default async function MainPage() {
+  const tasks = await getTasks();
   return (
     <>
       <div className="col-span-3 lg:col-span-4 lg:border-l">
@@ -47,7 +59,7 @@ export default function MusicPage() {
               value="progress"
               className="border-none p-0 outline-none"
             >
-              Table for the progress
+              <DataTable data={tasks} columns={columns} />
             </TabsContent>
             <TabsContent
               value="podcasts"
