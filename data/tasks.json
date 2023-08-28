@@ -1,29 +1,998 @@
 [
   {
     "id": "1",
-    "procedure": "PICC",
-    "date": "2023-08-24",
-    "role": "primary operator",
+    "procedure": "Abscess drainage",
+    "date": "2021-05-15",
+    "role": "Primary operator",
     "tier": "A",
-    "category": "Neuro",
+    "category": "Non-vascular",
     "supervisor": "None"
   },
   {
     "id": "2",
-    "procedure": "You can't compress the program without quantifying the open-source SSD pixel!",
-    "date": "in progress",
-    "role": "documentation",
-    "tier": "medium",
-    "category": "bug",
-    "supervisor": "Dennis"
+    "procedure": "Nephrostomy",
+    "date": "2021-06-01",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Lee"
   },
+
   {
     "id": "3",
-    "procedure": "You can't compress the program without quantifying the open-source SSD pixel!",
-    "date": "in progress",
-    "role": "documentation",
-    "tier": "medium",
-    "category": "bug",
-    "supervisor": "Dennis"
+    "procedure": "Biliary stenting",
+    "date": "2021-06-15",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Hepatobiliary",
+    "supervisor": "Dr. Chen"
+  },
+
+  {
+    "id": "4",
+    "procedure": "CVC insertion",
+    "date": "2021-07-05",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "5",
+    "procedure": "Vertebroplasty",
+    "date": "2021-07-20",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Musculoskeletal",
+    "supervisor": "Dr. Wong"
+  },
+
+  {
+    "id": "6",
+    "procedure": "Abscess drainage",
+    "date": "2021-08-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "7",
+    "procedure": "Peripheral angioplasty",
+    "date": "2021-08-15",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Lam"
+  },
+
+  {
+    "id": "8",
+    "procedure": "IVC filter",
+    "date": "2021-09-01",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Chu"
+  },
+
+  {
+    "id": "9",
+    "procedure": "Biopsy",
+    "date": "2021-09-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "10",
+    "procedure": "UFE",
+    "date": "2021-10-05",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Wong"
+  },
+
+  {
+    "id": "11",
+    "procedure": "CVC insertion",
+    "date": "2021-11-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "12",
+    "procedure": "Prostate artery embolization",
+    "date": "2021-11-15",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Lee"
+  },
+
+  {
+    "id": "13",
+    "procedure": "Vertebroplasty",
+    "date": "2021-12-01",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Musculoskeletal",
+    "supervisor": "Dr. Lam"
+  },
+
+  {
+    "id": "14",
+    "procedure": "Biopsy",
+    "date": "2021-12-20",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "15",
+    "procedure": "Carotid stenting",
+    "date": "2022-01-15",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Wong"
+  },
+
+  {
+    "id": "16",
+    "procedure": "TIPS",
+    "date": "2022-02-01",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Chen"
+  },
+
+  {
+    "id": "17",
+    "procedure": "Biopsy",
+    "date": "2022-03-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "18",
+    "procedure": "Vertebroplasty",
+    "date": "2022-03-20",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Musculoskeletal",
+    "supervisor": "Dr. Chu"
+  },
+
+  {
+    "id": "19",
+    "procedure": "Abscess drainage",
+    "date": "2022-04-05",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "20",
+    "procedure": "AVM embolization",
+    "date": "2022-04-15",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Neurointervention",
+    "supervisor": "Dr. Lam"
+  },
+
+  {
+    "id": "21",
+    "procedure": "Biopsy",
+    "date": "2022-05-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "22",
+    "procedure": "Uterine fibroid embolization",
+    "date": "2022-05-15",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Lee"
+  },
+
+  {
+    "id": "23",
+    "procedure": "CVC insertion",
+    "date": "2022-06-05",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "24",
+    "procedure": "Vertebroplasty",
+    "date": "2022-06-20",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Musculoskeletal",
+    "supervisor": "Dr. Wong"
+  },
+
+  {
+    "id": "25",
+    "procedure": "Abscess drainage",
+    "date": "2022-07-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "26",
+    "procedure": "Peripheral angioplasty",
+    "date": "2022-08-01",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Chen"
+  },
+
+  {
+    "id": "27",
+    "procedure": "Biopsy",
+    "date": "2022-08-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "28",
+    "procedure": "IVC filter",
+    "date": "2022-09-05",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Chu"
+  },
+
+  {
+    "id": "29",
+    "procedure": "Tumor ablation",
+    "date": "2022-09-20",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Oncology",
+    "supervisor": "Dr. Lam"
+  },
+
+  {
+    "id": "30",
+    "procedure": "Biopsy",
+    "date": "2022-10-05",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "31",
+    "procedure": "TIPS",
+    "date": "2022-10-15",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Lee"
+  },
+
+  {
+    "id": "32",
+    "procedure": "Abscess drainage",
+    "date": "2022-11-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "33",
+    "procedure": "TACE",
+    "date": "2022-11-20",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Oncology",
+    "supervisor": "Dr. Wong"
+  },
+
+  {
+    "id": "34",
+    "procedure": "CVC insertion",
+    "date": "2022-12-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "35",
+    "procedure": "Vertebroplasty",
+    "date": "2023-01-05",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Musculoskeletal",
+    "supervisor": "Dr. Chen"
+  },
+
+  {
+    "id": "36",
+    "procedure": "Biopsy",
+    "date": "2023-01-20",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "37",
+    "procedure": "Biliary stenting",
+    "date": "2023-02-05",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Chu"
+  },
+
+  {
+    "id": "38",
+    "procedure": "Abscess drainage",
+    "date": "2023-02-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "39",
+    "procedure": "AVM embolization",
+    "date": "2023-03-01",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Neurointervention",
+    "supervisor": "Dr. Lam"
+  },
+
+  {
+    "id": "40",
+    "procedure": "Biopsy",
+    "date": "2023-03-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "41",
+    "procedure": "Nephrostomy",
+    "date": "2023-04-05",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Lee"
+  },
+
+  {
+    "id": "42",
+    "procedure": "CVC insertion",
+    "date": "2023-04-20",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "43",
+    "procedure": "Tumor ablation",
+    "date": "2023-05-05",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Oncology",
+    "supervisor": "Dr. Wong"
+  },
+
+  {
+    "id": "44",
+    "procedure": "Abscess drainage",
+    "date": "2023-05-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "45",
+    "procedure": "Peripheral angioplasty",
+    "date": "2023-06-01",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Chen"
+  },
+
+  {
+    "id": "46",
+    "procedure": "Biopsy",
+    "date": "2023-06-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "47",
+    "procedure": "UFE",
+    "date": "2023-07-05",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Chu"
+  },
+
+  {
+    "id": "48",
+    "procedure": "Abscess drainage",
+    "date": "2023-07-20",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "49",
+    "procedure": "Vertebroplasty",
+    "date": "2023-08-05",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Musculoskeletal",
+    "supervisor": "Dr. Lam"
+  },
+
+  {
+    "id": "50",
+    "procedure": "CVC insertion",
+    "date": "2023-08-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Vascular",
+    "supervisor": "None"
+  },
+  {
+    "id": "51",
+    "procedure": "Biopsy",
+    "date": "2023-08-20",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "52",
+    "procedure": "AVM embolization",
+    "date": "2023-09-01",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Neurointervention",
+    "supervisor": "Dr. Chen"
+  },
+
+  {
+    "id": "53",
+    "procedure": "Abscess drainage",
+    "date": "2023-09-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "54",
+    "procedure": "IVC filter",
+    "date": "2023-10-01",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Wong"
+  },
+
+  {
+    "id": "55",
+    "procedure": "Vertebroplasty",
+    "date": "2023-10-15",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Musculoskeletal",
+    "supervisor": "Dr. Chu"
+  },
+
+  {
+    "id": "56",
+    "procedure": "Biopsy",
+    "date": "2023-11-05",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "57",
+    "procedure": "UFE",
+    "date": "2023-11-20",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Lam"
+  },
+
+  {
+    "id": "58",
+    "procedure": "Abscess drainage",
+    "date": "2023-12-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "59",
+    "procedure": "Peripheral angioplasty",
+    "date": "2023-12-15",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Lee"
+  },
+
+  {
+    "id": "60",
+    "procedure": "Biopsy",
+    "date": "2024-01-05",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "61",
+    "procedure": "Nephrostomy",
+    "date": "2024-01-15",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Chen"
+  },
+
+  {
+    "id": "62",
+    "procedure": "Abscess drainage",
+    "date": "2024-02-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "63",
+    "procedure": "IVC filter",
+    "date": "2024-02-15",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Wong"
+  },
+
+  {
+    "id": "64",
+    "procedure": "Biopsy",
+    "date": "2024-03-05",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "65",
+    "procedure": "TIPS",
+    "date": "2024-03-20",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Chu"
+  },
+
+  {
+    "id": "66",
+    "procedure": "Abscess drainage",
+    "date": "2024-04-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "67",
+    "procedure": "UFE",
+    "date": "2024-04-15",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Lam"
+  },
+
+  {
+    "id": "68",
+    "procedure": "Biopsy",
+    "date": "2024-05-05",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "69",
+    "procedure": "Peripheral angioplasty",
+    "date": "2024-05-20",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Lee"
+  },
+
+  {
+    "id": "70",
+    "procedure": "Abscess drainage",
+    "date": "2024-06-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "71",
+    "procedure": "Vertebroplasty",
+    "date": "2024-06-15",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Musculoskeletal",
+    "supervisor": "Dr. Chen"
+  },
+
+  {
+    "id": "72",
+    "procedure": "Biopsy",
+    "date": "2024-07-05",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "73",
+    "procedure": "Biliary stenting",
+    "date": "2024-07-20",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Wong"
+  },
+
+  {
+    "id": "74",
+    "procedure": "Abscess drainage",
+    "date": "2024-08-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "75",
+    "procedure": "TACE",
+    "date": "2024-08-15",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Oncology",
+    "supervisor": "Dr. Chu"
+  },
+
+  {
+    "id": "76",
+    "procedure": "Biopsy",
+    "date": "2024-09-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "77",
+    "procedure": "AVM embolization",
+    "date": "2024-09-15",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Neurointervention",
+    "supervisor": "Dr. Lam"
+  },
+
+  {
+    "id": "78",
+    "procedure": "Abscess drainage",
+    "date": "2024-10-05",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "79",
+    "procedure": "IVC filter",
+    "date": "2024-10-20",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Lee"
+  },
+
+  {
+    "id": "80",
+    "procedure": "Biopsy",
+    "date": "2024-11-05",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "81",
+    "procedure": "UFE",
+    "date": "2024-11-15",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Chen"
+  },
+
+  {
+    "id": "82",
+    "procedure": "Abscess drainage",
+    "date": "2024-12-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "83",
+    "procedure": "Nephrostomy",
+    "date": "2024-12-15",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Wong"
+  },
+
+  {
+    "id": "84",
+    "procedure": "Biopsy",
+    "date": "2025-01-05",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "85",
+    "procedure": "Peripheral angioplasty",
+    "date": "2025-01-20",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Chu"
+  },
+
+  {
+    "id": "86",
+    "procedure": "Abscess drainage",
+    "date": "2025-02-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "87",
+    "procedure": "Vertebroplasty",
+    "date": "2025-02-15",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Musculoskeletal",
+    "supervisor": "Dr. Lam"
+  },
+
+  {
+    "id": "88",
+    "procedure": "Biopsy",
+    "date": "2025-03-05",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+  {
+    "id": "89",
+    "procedure": "Biliary stenting",
+    "date": "2025-03-20",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Lee"
+  },
+
+  {
+    "id": "90",
+    "procedure": "Abscess drainage",
+    "date": "2025-04-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "91",
+    "procedure": "TIPS",
+    "date": "2025-04-15",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Chen"
+  },
+
+  {
+    "id": "92",
+    "procedure": "Biopsy",
+    "date": "2025-05-05",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "93",
+    "procedure": "Carotid stenting",
+    "date": "2025-05-20",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Wong"
+  },
+
+  {
+    "id": "94",
+    "procedure": "Abscess drainage",
+    "date": "2025-06-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "95",
+    "procedure": "Prostate artery embolization",
+    "date": "2025-06-15",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Chu"
+  },
+
+  {
+    "id": "96",
+    "procedure": "Biopsy",
+    "date": "2025-07-05",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "97",
+    "procedure": "Vertebroplasty",
+    "date": "2025-07-20",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Musculoskeletal",
+    "supervisor": "Dr. Lam"
+  },
+
+  {
+    "id": "98",
+    "procedure": "Abscess drainage",
+    "date": "2025-08-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "99",
+    "procedure": "Tumor ablation",
+    "date": "2025-08-15",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Oncology",
+    "supervisor": "Dr. Lee"
+  },
+
+  {
+    "id": "100",
+    "procedure": "CVC insertion",
+    "date": "2025-09-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Vascular",
+    "supervisor": "None"
   }
 ]

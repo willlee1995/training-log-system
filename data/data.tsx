@@ -22,19 +22,19 @@ export const labels = [
 ];
 export const categories = [
   {
-    value: "Neuro",
+    value: "Neurointervention",
     label: "Neurointerventional procedures",
-    icon: QuestionMarkCircledIcon,
+    icon: Brain,
   },
   {
     value: "Arterial",
     label: "Arterial interventional procedures",
-    icon: QuestionMarkCircledIcon,
+    icon: Heart,
   },
   {
     value: "Venous",
     label: "Venous and dialysis access interventions",
-    icon: QuestionMarkCircledIcon,
+    icon: Heart,
   },
   {
     value: "Hepatobiliary",
@@ -74,7 +74,17 @@ export const categories = [
   {
     value: "MR",
     label: "MR guided interventions",
-    icon: <Heart />,
+    icon: QuestionMarkCircledIcon,
+  },
+  {
+    value: "Non-vascular",
+    label: "Non-Vascular",
+    icon: QuestionMarkCircledIcon,
+  },
+  {
+    value: "Vascular",
+    label: "Vascular",
+    icon: Syringe,
   },
 ];
 export const statuses = [

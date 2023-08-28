@@ -5,6 +5,11 @@ import { cn } from "@/lib/utils";
 import { Plus } from "lucide-react";
 import Link from "next/link";
 import { Playlist } from "../data/playlists";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "./ui/collapsible";
 interface SidebarProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export function Sidebar({ className }: SidebarProps) {
@@ -13,56 +18,74 @@ export function Sidebar({ className }: SidebarProps) {
       <div className="space-y-4 py-4">
         <div className="px-3 py-2">
           <div className="space-y-1">
-            <Link href="/addProcedure">
-              <Button variant="secondary" className="w-full justify-start">
+            <Button
+              variant="secondary"
+              asChild
+              className="w-full justify-start"
+            >
+              <Link href="/addProcedure">
                 <Plus />
                 Add procedure
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
         <div className="px-3 py-2">
           <div className="space-y-1">
-            <Link href="/">
-              <Button variant="ghost" className="w-full justify-start">
-                My progress summary
-              </Button>
-            </Link>
-            <Button variant="ghost" className="w-full justify-start">
-              Neurointerventional procedures
+            <Button variant="ghost" asChild className="w-full justify-start">
+              <Link href="/">My progress summary</Link>
+            </Button>
+            <Button variant="ghost" disabled className="w-full justify-start">
+              Tier A
+            </Button>
+            <Separator />
+            <Button asChild variant="ghost" className="w-full justify-start">
+              <Link href="/nvir">Non-Vascular</Link>
+            </Button>
+            <Button asChild variant="ghost" className="w-full justify-start">
+              <Link href="/ir">Vascular</Link>
+            </Button>
+            <Button variant="ghost" disabled className="w-full justify-start ">
+              Tier B
+            </Button>
+            <Separator />
+            <Button asChild variant="ghost" className="w-full justify-start">
+              <Link href="/neuro">Neurointerventional procedures</Link>
             </Button>
             <Button variant="ghost" className="w-full justify-start">
-              Arterial interventional procedures
+              <Link href="/arterial">Arterial interventional procedures</Link>
             </Button>
             <Button variant="ghost" className="w-full justify-start">
-              Venous and dialysis access interventions
+              <Link href="/venous">
+                Venous and dialysis access interventions
+              </Link>
             </Button>
             <Button variant="ghost" className="w-full justify-start">
-              Hepatobiliary interventions
+              <Link href="/hepatobiliary">Hepatobiliary interventions</Link>
             </Button>
             <Button variant="ghost" className="w-full justify-start">
-              Thoracic interventions
+              <Link href="/thoracic">Thoracic interventions</Link>
             </Button>
             <Button variant="ghost" className="w-full justify-start">
-              Gastro-intestinal intervention
+              <Link href="/gi">Gastro-intestinal intervention</Link>
             </Button>
             <Button variant="ghost" className="w-full justify-start">
-              Urogenital interventions
+              <Link href="/urogenital">Urogenital interventions</Link>
             </Button>
             <Button variant="ghost" className="w-full justify-start">
-              Musculoskeletal interventions
+              <Link href="/arterial">Musculoskeletal interventions</Link>
             </Button>
             <Button variant="ghost" className="w-full justify-start">
-              Paediatric interventions
+              <Link href="/arterial">Paediatric interventions</Link>
             </Button>
             <Button variant="ghost" className="w-full justify-start">
-              Interventional Oncology
+              <Link href="/arterial">Interventional Oncology</Link>
             </Button>
             <Button variant="ghost" className="w-full justify-start">
-              Vascular anomalies
+              <Link href="/arterial">Vascular anomalies</Link>
             </Button>
             <Button variant="ghost" className="w-full justify-start">
-              MR guided interventions
+              <Link href="/arterial">MR guided interventions</Link>
             </Button>
           </div>
         </div>

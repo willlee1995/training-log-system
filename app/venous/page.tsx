@@ -1,3 +1,4 @@
+"use client";
 import { PlusCircledIcon } from "@radix-ui/react-icons";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -16,8 +17,8 @@ import { columns } from "@/components/table/columns";
 import { listenNowAlbums, madeForYouAlbums } from "@/data/albums";
 import { playlists } from "@/data/playlists";
 import { logSchema } from "@/data/schema";
+
 import tasks from "@/data/tasks.json";
-import { promises as fs } from "fs";
 import Link from "next/link";
 import path from "path";
 export const metadata: Metadata = {
@@ -25,22 +26,15 @@ export const metadata: Metadata = {
   description: "HKCR IR subspeciality training log system",
 };
 
-export default async function MainPage() {
+export default function Neuro() {
+  const tasksNeuro = tasks.filter((task) => task.category === "venous");
   return (
     <>
       <div className="col-span-3 lg:col-span-4 lg:border-l">
         <div className="h-full px-4 py-6 lg:px-8">
-          <h2 className="text-2xl font-semibold tracking-tight">
-            My progress summary
-          </h2>
+          <h2 className="text-2xl font-semibold tracking-tight my-4">Venous</h2>
           <Tabs defaultValue="progress" className="h-full space-y-6">
             <div className="space-between flex items-center">
-              <TabsList>
-                <TabsTrigger value="progress" className="relative">
-                  My progress
-                </TabsTrigger>
-                <TabsTrigger value="cases">All cases</TabsTrigger>
-              </TabsList>
               <div className="ml-auto mr-4">
                 <Link href="/addProcedure">
                   <Button>
@@ -50,18 +44,8 @@ export default async function MainPage() {
                 </Link>
               </div>
             </div>
-            <TabsContent
-              value="progress"
-              className="border-none p-0 outline-none"
-            >
-              <Dashboard />
-            </TabsContent>
-            <TabsContent
-              value="cases"
-              className="h-full flex-col border-none p-0 data-[state=active]:flex"
-            >
-              <DataTable data={tasks} columns={columns} />
-            </TabsContent>
+
+            <DataTable data={tasksNeuro} columns={columns} />
           </Tabs>
         </div>
       </div>

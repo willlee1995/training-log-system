@@ -165,9 +165,9 @@ export function AddProcedureForm() {
                   <SelectItem value="PO">Primary Operator</SelectItem>
                   <SelectItem value="A">Assistant</SelectItem>
                   <SelectItem value="S">Supervisor</SelectItem>
+                  <SelectItem value="O">Observer</SelectItem>
                 </SelectContent>
               </Select>
-
               <FormMessage />
             </FormItem>
           )}

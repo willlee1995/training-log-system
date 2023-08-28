@@ -142,11 +142,9 @@ export const columns: ColumnDef<Log>[] = [
       const category = categories.find(
         (category) => category.value === row.getValue("category")
       );
-
       if (!category) {
         return null;
       }
-
       return (
         <div className="flex items-center">
           {category.icon && (
