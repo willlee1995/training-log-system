@@ -25,14 +25,14 @@ export const metadata: Metadata = {
   description: "HKCR IR subspeciality training log system",
 };
 
-export default function Arterial() {
-  const tasksNeuro = tasks.filter((task) => task.category === "arterial");
+export default function NVIR() {
+  const tasksNeuro = tasks.filter((task) => task.category === "Non-vascular");
   return (
     <>
       <div className="col-span-3 lg:col-span-4 lg:border-l">
         <div className="h-full px-4 py-6 lg:px-8">
           <h2 className="text-2xl font-semibold tracking-tight my-4">
-            Arterial procedures
+            Non-vascular Procedure
           </h2>
           <Tabs defaultValue="progress" className="h-full space-y-6">
             <div className="space-between flex items-center">
