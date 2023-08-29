@@ -1,4 +1,3 @@
-"use client";
 import { Menu } from "@/components/menu";
 import { Sidebar } from "@/components/sidebar";
 import { ThemeProvider } from "@/components/theme-provider";

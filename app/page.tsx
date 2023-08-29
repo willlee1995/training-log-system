@@ -42,12 +42,12 @@ export default async function MainPage() {
                 <TabsTrigger value="cases">All cases</TabsTrigger>
               </TabsList>
               <div className="ml-auto mr-4">
-                <Link href="/addProcedure">
-                  <Button>
+                <Button asChild>
+                  <Link href="/addProcedure">
                     <PlusCircledIcon className="mr-2 h-4 w-4" />
                     Add procedure
-                  </Button>
-                </Link>
+                  </Link>
+                </Button>
               </div>
             </div>
             <TabsContent
