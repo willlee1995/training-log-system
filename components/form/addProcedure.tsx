@@ -27,7 +27,10 @@ import {
 import {
   Select,
   SelectContent,
+  SelectGroup,
   SelectItem,
+  SelectLabel,
+  SelectSeparator,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
@@ -41,7 +44,7 @@ import Link from "next/link";
 import { useFieldArray, useForm } from "react-hook-form";
 import * as z from "zod";
 
-const profileFormSchema = z.object({
+const addProcedureSchema = z.object({
   procedure: z
     .string()
     .min(2, {
@@ -65,23 +68,24 @@ const profileFormSchema = z.object({
   }),
 });
 
-type ProfileFormValues = z.infer<typeof profileFormSchema>;
+type AddProcedureFormValues = z.infer<typeof addProcedureSchema>;
 
 const supervisors = [
   { label: "Dr. K F Fung", value: "fkf156" },
   { label: "Example", value: "exm" },
 ] as const;
 // This can come from your database or API.
-const defaultValues: Partial<ProfileFormValues> = {};
+const defaultValues: Partial<AddProcedureFormValues> = {};
 
 export function AddProcedureForm() {
-  const form = useForm<ProfileFormValues>({
-    resolver: zodResolver(profileFormSchema),
+  const form = useForm<AddProcedureFormValues>({
+    resolver: zodResolver(addProcedureSchema),
     defaultValues,
     mode: "onChange",
   });
 
-  function onSubmit(data: ProfileFormValues) {
+  function onSubmit(data: AddProcedureFormValues) {
+    console.log("submitting", data);
     toast({
       title: "You submitted the following values:",
       description: (
@@ -189,7 +193,6 @@ export function AddProcedureForm() {
                   <SelectItem value="B">Tier B</SelectItem>
                 </SelectContent>
               </Select>
-
               <FormMessage />
             </FormItem>
           )}
@@ -207,35 +210,54 @@ export function AddProcedureForm() {
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
-                  <SelectItem value="Neuro">
-                    Neurointerventional procedures
-                  </SelectItem>
-                  <SelectItem value="Arterial">
-                    Arterial interventional procedures
-                  </SelectItem>
-                  <SelectItem value="Venous">
-                    Venous and dialysis access interventions
-                  </SelectItem>
-                  <SelectItem value="Hepatobiliary">
-                    Hepatobiliary interventions
-                  </SelectItem>
-                  <SelectItem value="Thoracic">
-                    Thoracic interventions
-                  </SelectItem>
-                  <SelectItem value="Urogenital">
-                    Urogenital interventions
-                  </SelectItem>
-                  <SelectItem value="Musculoskeletal">
-                    Musculoskeletal interventions
-                  </SelectItem>
-                  <SelectItem value="Paediatric">
-                    Paediatric interventions
-                  </SelectItem>
-                  <SelectItem value="Oncology">
-                    Interventional Oncology
-                  </SelectItem>
-                  <SelectItem value="VA">Vascular anomalies</SelectItem>
-                  <SelectItem value="MR">MR guided interventions</SelectItem>
+                  {form.watch("tier") === "A" && (
+                    <>
+                      <SelectItem value="nvir">
+                        Non-vascular procedures
+                      </SelectItem>
+                      <SelectItem value="Neuro">Vascular procedures</SelectItem>
+                    </>
+                  )}
+                  {form.watch("tier") === "B" && (
+                    <>
+                      <SelectItem value="Neuro">
+                        Neurointerventional procedures
+                      </SelectItem>
+                      <SelectItem value="Arterial">
+                        Arterial interventional procedures
+                      </SelectItem>
+                      <SelectItem value="Venous">
+                        Venous and dialysis access interventions
+                      </SelectItem>
+                      <SelectItem value="Hepatobiliary">
+                        Hepatobiliary interventions
+                      </SelectItem>
+                      <SelectItem value="Thoracic">
+                        Thoracic interventions
+                      </SelectItem>
+                      <SelectItem value="Urogenital">
+                        Urogenital interventions
+                      </SelectItem>
+                      <SelectItem value="Musculoskeletal">
+                        Musculoskeletal interventions
+                      </SelectItem>
+                      <SelectItem value="Paediatric">
+                        Paediatric interventions
+                      </SelectItem>
+                      <SelectItem value="Oncology">
+                        Interventional Oncology
+                      </SelectItem>
+                      <SelectItem value="VA">Vascular anomalies</SelectItem>
+                      <SelectItem value="MR">
+                        MR guided interventions
+                      </SelectItem>
+                    </>
+                  )}
+                  {form.watch("tier") === "" && (
+                    <SelectItem value="" disabled>
+                      Please select tier first
+                    </SelectItem>
+                  )}
                 </SelectContent>
               </Select>
 

@@ -2,6 +2,7 @@ import { Menu } from "@/components/menu";
 import { Sidebar } from "@/components/sidebar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Separator } from "@/components/ui/separator";
+import { Toaster } from "@/components/ui/toaster";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import React from "react";
@@ -32,6 +33,7 @@ export default function RootLayout({
               </div>
             </div>
           </div>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

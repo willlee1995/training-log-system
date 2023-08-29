@@ -62,7 +62,6 @@ export function ByCategory() {
         <Tooltip />
         <Legend />
         <Bar dataKey="Current" fill="#8884d8" />
-        <Bar dataKey="Target" fill="#82ca9d" />
       </BarChart>
     </ResponsiveContainer>
   );
