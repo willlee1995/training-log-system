@@ -1,4 +1,3 @@
-"use client";
 import { PlusCircledIcon } from "@radix-ui/react-icons";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -27,9 +26,7 @@ export const metadata: Metadata = {
 };
 
 export default function Thoracic() {
-  const tasksNeuro = tasks.filter(
-    (task) => task.category === "Thoracic"
-  );
+  const tasksNeuro = tasks.filter((task) => task.category === "Thoracic");
   return (
     <>
       <div className="col-span-3 lg:col-span-4 lg:border-l">
