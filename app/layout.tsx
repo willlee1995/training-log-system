@@ -22,11 +22,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="hidden md:block">
+          <div className=" md:block">
             <Menu />
             <div className="border-t">
               <div className="bg-background">
-                <div className="grid lg:grid-cols-5">
+                <div className="grid grid-cols-1 lg:grid-cols-5">
                   <Sidebar className="hidden lg:block" />
                   {children}
                 </div>

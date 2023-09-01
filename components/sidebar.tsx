@@ -73,10 +73,10 @@ export function Sidebar({ className }: SidebarProps) {
               <Link href="/urogenital">Urogenital interventions</Link>
             </Button>
             <Button variant="ghost" className="w-full justify-start">
-              <Link href="/arterial">Musculoskeletal interventions</Link>
+              <Link href="/msk">Musculoskeletal interventions</Link>
             </Button>
             <Button variant="ghost" className="w-full justify-start">
-              <Link href="/arterial">Paediatric interventions</Link>
+              <Link href="/paed">Paediatric interventions</Link>
             </Button>
             <Button variant="ghost" className="w-full justify-start">
               <Link href="/arterial">Interventional Oncology</Link>
