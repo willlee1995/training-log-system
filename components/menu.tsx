@@ -15,10 +15,12 @@ import {
   MenubarTrigger,
 } from "@/components/ui/menubar";
 import Link from "next/link";
+import SideDrawer from "./drawer";
 import ModeToggle from "./mode-toggle";
 export function Menu() {
   return (
     <Menubar className="rounded-none border-b border-none px-2 lg:px-4">
+      <SideDrawer></SideDrawer>
       <MenubarMenu>
         <MenubarTrigger className="font-bold">
           <Link href="/">IR subspeciality Log System</Link>

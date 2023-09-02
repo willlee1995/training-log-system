@@ -12,6 +12,73 @@ import {
 } from "./ui/collapsible";
 interface SidebarProps extends React.HTMLAttributes<HTMLDivElement> {}
 
+type navigationLink = {
+  name: string;
+  href: string;
+  disabled?: boolean;
+  tier?: "A" | "B";
+};
+export const navigationLinks: navigationLink[] = [
+  {
+    name: "Non-Vascular",
+    href: "/nvir",
+    tier: "A",
+  },
+  {
+    name: "Vascular",
+    href: "/ir",
+    tier: "A",
+  },
+  {
+    name: "Neurointerventional procedures",
+    href: "/neuro",
+  },
+  {
+    name: "Arterial interventional procedures",
+    href: "/arterial",
+  },
+  {
+    name: "Venous and dialysis access interventions",
+    href: "/venous",
+  },
+  {
+    name: "Hepatobiliary interventions",
+    href: "/hepatobiliary",
+  },
+  {
+    name: "Thoracic interventions",
+    href: "/thoracic",
+  },
+  {
+    name: "Gastro-intestinal intervention",
+    href: "/gi",
+  },
+  {
+    name: "Urogenital interventions",
+    href: "/urogenital",
+  },
+  {
+    name: "Musculoskeletal interventions",
+    href: "/msk",
+  },
+  {
+    name: "Paediatric interventions",
+    href: "/paed",
+  },
+  {
+    name: "Interventional Oncology",
+    href: "/arterial",
+  },
+  {
+    name: "Vascular anomalies",
+    href: "/arterial",
+  },
+  {
+    name: "MR guided interventions",
+    href: "/arterial",
+  },
+];
+
 export function Sidebar({ className }: SidebarProps) {
   return (
     <div className={cn("pb-12", className)}>
@@ -39,54 +106,24 @@ export function Sidebar({ className }: SidebarProps) {
               Tier A
             </Button>
             <Separator />
-            <Button asChild variant="ghost" className="w-full justify-start">
-              <Link href="/nvir">Non-Vascular</Link>
-            </Button>
-            <Button asChild variant="ghost" className="w-full justify-start">
-              <Link href="/ir">Vascular</Link>
-            </Button>
+            {navigationLinks
+              .filter((link) => link.tier == "A")
+              .map((link) => (
+                <Button variant="ghost" className="w-full justify-start">
+                  <Link href={link.href}>{link.name}</Link>
+                </Button>
+              ))}
             <Button variant="ghost" disabled className="w-full justify-start ">
               Tier B
             </Button>
             <Separator />
-            <Button asChild variant="ghost" className="w-full justify-start">
-              <Link href="/neuro">Neurointerventional procedures</Link>
-            </Button>
-            <Button variant="ghost" className="w-full justify-start">
-              <Link href="/arterial">Arterial interventional procedures</Link>
-            </Button>
-            <Button variant="ghost" className="w-full justify-start">
-              <Link href="/venous">
-                Venous and dialysis access interventions
-              </Link>
-            </Button>
-            <Button variant="ghost" className="w-full justify-start">
-              <Link href="/hepatobiliary">Hepatobiliary interventions</Link>
-            </Button>
-            <Button variant="ghost" className="w-full justify-start">
-              <Link href="/thoracic">Thoracic interventions</Link>
-            </Button>
-            <Button variant="ghost" className="w-full justify-start">
-              <Link href="/gi">Gastro-intestinal intervention</Link>
-            </Button>
-            <Button variant="ghost" className="w-full justify-start">
-              <Link href="/urogenital">Urogenital interventions</Link>
-            </Button>
-            <Button variant="ghost" className="w-full justify-start">
-              <Link href="/msk">Musculoskeletal interventions</Link>
-            </Button>
-            <Button variant="ghost" className="w-full justify-start">
-              <Link href="/paed">Paediatric interventions</Link>
-            </Button>
-            <Button variant="ghost" className="w-full justify-start">
-              <Link href="/arterial">Interventional Oncology</Link>
-            </Button>
-            <Button variant="ghost" className="w-full justify-start">
-              <Link href="/arterial">Vascular anomalies</Link>
-            </Button>
-            <Button variant="ghost" className="w-full justify-start">
-              <Link href="/arterial">MR guided interventions</Link>
-            </Button>
+            {navigationLinks
+              .filter((link) => link.tier != "A")
+              .map((link) => (
+                <Button variant="ghost" className="w-full justify-start">
+                  <Link href={link.href}>{link.name}</Link>
+                </Button>
+              ))}
           </div>
         </div>
         <Separator orientation="vertical" />
