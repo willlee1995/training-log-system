@@ -64,7 +64,11 @@ export default function SideDrawer() {
                   {navigationLinks
                     .filter((link) => link.tier == "A")
                     .map((link) => (
-                      <Button variant="ghost" className="w-full justify-start">
+                      <Button
+                        key={link.name}
+                        variant="ghost"
+                        className="w-full justify-start"
+                      >
                         <Link href={link.href}>{link.name}</Link>
                       </Button>
                     ))}
@@ -90,7 +94,11 @@ export default function SideDrawer() {
                   {navigationLinks
                     .filter((link) => link.tier != "A")
                     .map((link) => (
-                      <Button variant="ghost" className="w-full justify-start">
+                      <Button
+                        key={link.name}
+                        variant="ghost"
+                        className="w-full justify-start"
+                      >
                         <Link href={link.href}>{link.name}</Link>
                       </Button>
                     ))}
