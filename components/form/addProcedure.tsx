@@ -34,7 +34,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/components/ui/use-toast";
 import { cn } from "@/lib/utils";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -44,6 +43,7 @@ import Link from "next/link";
 import { useFieldArray, useForm } from "react-hook-form";
 import * as z from "zod";
 import { Separator } from "../ui/separator";
+import { Textarea } from "@/components/ui/textarea";
 
 const addProcedureSchema = z.object({
   procedure: z
@@ -62,6 +62,7 @@ const addProcedureSchema = z.object({
   //   required_error: "Please select a role.",
   // }),
   patient_id: z.string(),
+  hospital: z.string(),
   tier: z.string({
     required_error: "Please select a tier.",
   }),
@@ -71,6 +72,7 @@ const addProcedureSchema = z.object({
   // supervisor: z.string({
   //   required_error: "Please select a supervisor.",
   // }),
+  remarks: z.string().optional(),
 });
 
 type AddProcedureFormValues = z.infer<typeof addProcedureSchema>;
@@ -175,6 +177,20 @@ export function AddProcedureForm() {
           )}
         />
         <Separator />
+        <h2>Procedure</h2>
+        <FormField
+          control={form.control}
+          name="hospital"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Hospital</FormLabel>
+              <FormControl>
+                <Input placeholder="Hospital" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
         <FormField
           control={form.control}
           name="procedure"
@@ -400,6 +416,22 @@ export function AddProcedureForm() {
             </FormItem>
           )}
         /> */}
+        <FormField
+          control={form.control}
+          name="remarks"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Remark</FormLabel>
+              <FormControl>
+                <Textarea
+                  placeholder="Remarks (e.g. procedure-related complications)"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
         <Button type="submit">Add procedure</Button>
       </form>
     </Form>
