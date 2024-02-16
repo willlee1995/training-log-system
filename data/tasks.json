@@ -994,5 +994,733 @@
     "tier": "A",
     "category": "Vascular",
     "supervisor": "None"
+  },
+  {
+    "id": "101",
+    "procedure": "Nephrostomy",
+    "date": "2025-09-15",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Chen"
+  },
+
+  {
+    "id": "102",
+    "procedure": "Biopsy",
+    "date": "2025-10-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "103",
+    "procedure": "UFE",
+    "date": "2025-10-15",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Wong"
+  },
+
+  {
+    "id": "104",
+    "procedure": "Abscess drainage",
+    "date": "2025-11-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "105",
+    "procedure": "Peripheral angioplasty",
+    "date": "2025-11-15",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Chu"
+  },
+
+  {
+    "id": "106",
+    "procedure": "Biopsy",
+    "date": "2025-12-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "107",
+    "procedure": "Vertebroplasty",
+    "date": "2025-12-15",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Musculoskeletal",
+    "supervisor": "Dr. Lam"
+  },
+
+  {
+    "id": "108",
+    "procedure": "Abscess drainage",
+    "date": "2026-01-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "109",
+    "procedure": "Biliary stenting",
+    "date": "2026-01-15",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Lee"
+  },
+
+  {
+    "id": "110",
+    "procedure": "Biopsy",
+    "date": "2026-02-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+  {
+    "id": "111",
+    "procedure": "Abscess drainage",
+    "date": "2026-02-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "112",
+    "procedure": "AVM embolization",
+    "date": "2026-03-01",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Neurointervention",
+    "supervisor": "Dr. Chen"
+  },
+
+  {
+    "id": "113",
+    "procedure": "Biopsy",
+    "date": "2026-03-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "114",
+    "procedure": "Nephrostomy",
+    "date": "2026-04-01",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Wong"
+  },
+
+  {
+    "id": "115",
+    "procedure": "Abscess drainage",
+    "date": "2026-04-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "116",
+    "procedure": "IVC filter",
+    "date": "2026-05-01",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Chu"
+  },
+
+  {
+    "id": "117",
+    "procedure": "Biopsy",
+    "date": "2026-05-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "118",
+    "procedure": "Vertebroplasty",
+    "date": "2026-06-01",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Musculoskeletal",
+    "supervisor": "Dr. Lam"
+  },
+
+  {
+    "id": "119",
+    "procedure": "Abscess drainage",
+    "date": "2026-06-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "120",
+    "procedure": "Biliary stenting",
+    "date": "2026-07-01",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Lee"
+  },
+
+  {
+    "id": "121",
+    "procedure": "Biopsy",
+    "date": "2026-07-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "122",
+    "procedure": "Abscess drainage",
+    "date": "2026-08-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "123",
+    "procedure": "TACE",
+    "date": "2026-08-15",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Oncology",
+    "supervisor": "Dr. Chen"
+  },
+
+  {
+    "id": "124",
+    "procedure": "Biopsy",
+    "date": "2026-09-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "125",
+    "procedure": "AVM embolization",
+    "date": "2026-09-15",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Neurointervention",
+    "supervisor": "Dr. Wong"
+  },
+
+  {
+    "id": "126",
+    "procedure": "Abscess drainage",
+    "date": "2026-10-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "127",
+    "procedure": "IVC filter",
+    "date": "2026-10-15",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Chu"
+  },
+
+  {
+    "id": "128",
+    "procedure": "Biopsy",
+    "date": "2026-11-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "129",
+    "procedure": "UFE",
+    "date": "2026-11-15",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Lam"
+  },
+
+  {
+    "id": "130",
+    "procedure": "Abscess drainage",
+    "date": "2026-12-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "131",
+    "procedure": "Nephrostomy",
+    "date": "2026-12-15",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Lee"
+  },
+
+  {
+    "id": "132",
+    "procedure": "Biopsy",
+    "date": "2027-01-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "133",
+    "procedure": "Abscess drainage",
+    "date": "2027-01-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "134",
+    "procedure": "Peripheral angioplasty",
+    "date": "2027-02-01",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Chen"
+  },
+
+  {
+    "id": "135",
+    "procedure": "Biopsy",
+    "date": "2027-02-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "136",
+    "procedure": "Abscess drainage",
+    "date": "2027-03-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "137",
+    "procedure": "Vertebroplasty",
+    "date": "2027-03-15",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Musculoskeletal",
+    "supervisor": "Dr. Wong"
+  },
+
+  {
+    "id": "138",
+    "procedure": "Biopsy",
+    "date": "2027-04-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "139",
+    "procedure": "Abscess drainage",
+    "date": "2027-04-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "140",
+    "procedure": "Biliary stenting",
+    "date": "2027-05-01",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Chu"
+  },
+
+  {
+    "id": "141",
+    "procedure": "Biopsy",
+    "date": "2027-05-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "142",
+    "procedure": "Abscess drainage",
+    "date": "2027-06-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "143",
+    "procedure": "TIPS",
+    "date": "2027-06-15",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Lam"
+  },
+
+  {
+    "id": "144",
+    "procedure": "Biopsy",
+    "date": "2027-07-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "145",
+    "procedure": "Abscess drainage",
+    "date": "2027-07-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "146",
+    "procedure": "UFE",
+    "date": "2027-08-01",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Lee"
+  },
+
+  {
+    "id": "147",
+    "procedure": "Biopsy",
+    "date": "2027-08-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "148",
+    "procedure": "Abscess drainage",
+    "date": "2027-09-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "149",
+    "procedure": "Vertebroplasty",
+    "date": "2027-09-15",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Musculoskeletal",
+    "supervisor": "Dr. Chen"
+  },
+
+  {
+    "id": "150",
+    "procedure": "Biopsy",
+    "date": "2027-10-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "151",
+    "procedure": "Abscess drainage",
+    "date": "2027-10-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "152",
+    "procedure": "IVC filter",
+    "date": "2027-11-01",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Wong"
+  },
+
+  {
+    "id": "153",
+    "procedure": "Biopsy",
+    "date": "2027-11-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "154",
+    "procedure": "Abscess drainage",
+    "date": "2027-12-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "155",
+    "procedure": "Vertebroplasty",
+    "date": "2027-12-15",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Musculoskeletal",
+    "supervisor": "Dr. Chu"
+  },
+
+  {
+    "id": "156",
+    "procedure": "Biopsy",
+    "date": "2028-01-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "157",
+    "procedure": "Abscess drainage",
+    "date": "2028-01-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "158",
+    "procedure": "Biliary stenting",
+    "date": "2028-02-01",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Lam"
+  },
+
+  {
+    "id": "159",
+    "procedure": "Biopsy",
+    "date": "2028-02-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "160",
+    "procedure": "Abscess drainage",
+    "date": "2028-03-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "161",
+    "procedure": "AVM embolization",
+    "date": "2028-03-15",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Neurointervention",
+    "supervisor": "Dr. Lee"
+  },
+
+  {
+    "id": "162",
+    "procedure": "Biopsy",
+    "date": "2028-04-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "163",
+    "procedure": "Abscess drainage",
+    "date": "2028-04-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "164",
+    "procedure": "Nephrostomy",
+    "date": "2028-05-01",
+    "role": "Primary operator",
+    "tier": "B",
+    "category": "Non-vascular",
+    "supervisor": "Dr. Chen"
+  },
+
+  {
+    "id": "165",
+    "procedure": "Biopsy",
+    "date": "2028-05-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "166",
+    "procedure": "Abscess drainage",
+    "date": "2028-06-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "167",
+    "procedure": "Peripheral angioplasty",
+    "date": "2028-06-15",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Vascular",
+    "supervisor": "Dr. Wong"
+  },
+
+  {
+    "id": "168",
+    "procedure": "Biopsy",
+    "date": "2028-07-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "169",
+    "procedure": "Abscess drainage",
+    "date": "2028-07-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "170",
+    "procedure": "Vertebroplasty",
+    "date": "2028-08-01",
+    "role": "Assistant",
+    "tier": "B",
+    "category": "Musculoskeletal",
+    "supervisor": "Dr. Chu"
+  },
+
+  {
+    "id": "171",
+    "procedure": "Biopsy",
+    "date": "2028-08-15",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "172",
+    "procedure": "Abscess drainage",
+    "date": "2028-09-01",
+    "role": "Primary operator",
+    "tier": "A",
+    "category": "Non-vascular",
+    "supervisor": "None"
+  },
+
+  {
+    "id": "173",
+    "procedure": "Tumor ablation",
+    "date": "2028-09-15",
+    "role": "Observer",
+    "tier": "B",
+    "category": "Oncology",
+    "supervisor": "Dr. Lam"
   }
 ]

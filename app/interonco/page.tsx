@@ -1,4 +1,3 @@
-"use client";
 import { PlusCircledIcon } from "@radix-ui/react-icons";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -26,16 +25,16 @@ export const metadata: Metadata = {
   description: "HKCR IR subspeciality training log system",
 };
 
-export default function Neuro() {
+export default function InterOnco() {
   const tasksNeuro = tasks.filter(
-    (task) => task.category === "Neurointervention"
+    (task) => task.category === "Interventional Oncology"
   );
   return (
     <>
       <div className="col-span-3 lg:col-span-4 lg:border-l">
         <div className="h-full px-4 py-6 lg:px-8">
           <h2 className="text-2xl font-semibold tracking-tight my-4">
-            Neurointerventional procedures
+            Non-vascular Procedure
           </h2>
           <Tabs defaultValue="progress" className="h-full space-y-6">
             <div className="space-between flex items-center">
