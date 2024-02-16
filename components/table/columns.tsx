@@ -1,6 +1,5 @@
-import { z } from "zod";
-
 "use client";
+import { z } from "zod";
 
 import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -78,30 +77,6 @@ export const columns: ColumnDef<Log>[] = [
             <status.icon className="mr-2 h-4 w-4 text-muted-foreground" />
           )} */}
           <span>{row.original.date}</span>
-        </div>
-      );
-    },
-    filterFn: (row, id, value) => {
-      return value.includes(row.getValue(id));
-    },
-  },
-  {
-    accessorKey: "role",
-    header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="Role" />
-    ),
-    cell: ({ row }) => {
-      // const priority = priorities.find(
-      //   (priority) => priority.value === row.getValue("priority")
-      // );
-
-      // if (!priority) {
-      //   return null;
-      // }
-
-      return (
-        <div className="flex items-center">
-          <span>{row.original.role}</span>
         </div>
       );
     },

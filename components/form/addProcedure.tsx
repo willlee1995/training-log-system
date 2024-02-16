@@ -40,6 +40,7 @@ import { format } from "date-fns";
 import Link from "next/link";
 import { useFieldArray, useForm } from "react-hook-form";
 import * as z from "zod";
+import { Separator } from "../ui/separator";
 
 const profileFormSchema = z.object({
   procedure: z
@@ -51,18 +52,22 @@ const profileFormSchema = z.object({
       message: "Username must not be longer than 30 characters.",
     }),
   date: z.date(),
-  role: z.string({
-    required_error: "Please select a role.",
-  }),
+  sex: z.string(),
+  hospital_number: z.string(),
+  age: z.string(),
+  // role: z.string({
+  //   required_error: "Please select a role.",
+  // }),
+  patient_id: z.string(),
   tier: z.string({
     required_error: "Please select a tier.",
   }),
   category: z.string({
     required_error: "Please select a category.",
   }),
-  supervisor: z.string({
-    required_error: "Please select a supervisor.",
-  }),
+  // supervisor: z.string({
+  //   required_error: "Please select a supervisor.",
+  // }),
 });
 
 type ProfileFormValues = z.infer<typeof profileFormSchema>;
@@ -95,6 +100,77 @@ export function AddProcedureForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <h2>Patient Demographics</h2>
+        <FormField
+          control={form.control}
+          name="sex"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Sex</FormLabel>
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Sex of the patient" />
+                  </SelectTrigger>
+                </FormControl>
+                <SelectContent>
+                  <SelectItem value="A">Male</SelectItem>
+                  <SelectItem value="B">Female</SelectItem>
+                </SelectContent>
+              </Select>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="age"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Age</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Please enter patient's age here"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="hospital_number"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Hospital Number</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Please enter patient's hospital number here"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="patient_id"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Patient ID</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Please enter patient's HKID here"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <Separator />
         <FormField
           control={form.control}
           name="procedure"
@@ -149,7 +225,7 @@ export function AddProcedureForm() {
             </FormItem>
           )}
         />
-        <FormField
+        {/* <FormField
           control={form.control}
           name="role"
           render={({ field }) => (
@@ -171,7 +247,7 @@ export function AddProcedureForm() {
               <FormMessage />
             </FormItem>
           )}
-        />
+        /> */}
         <FormField
           control={form.control}
           name="tier"
@@ -243,7 +319,7 @@ export function AddProcedureForm() {
             </FormItem>
           )}
         />
-        <FormField
+        {/* <FormField
           control={form.control}
           name="supervisor"
           render={({ field }) => (
@@ -301,7 +377,7 @@ export function AddProcedureForm() {
               <FormMessage />
             </FormItem>
           )}
-        />
+        /> */}
         <Button type="submit">Add procedure</Button>
       </form>
     </Form>

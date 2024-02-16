@@ -60,12 +60,12 @@ export default function Dashboard() {
               <Button>Download</Button>
             </div>
           </div>
-          <Tabs defaultValue="overview" className="space-y-4">
+          <Tabs defaultValue="category" className="space-y-4">
             <TabsList>
-              <TabsTrigger value="overview">Overview - Radial</TabsTrigger>
+              {/* <TabsTrigger value="overview">Overview - Radial</TabsTrigger> */}
               <TabsTrigger value="category">By Category</TabsTrigger>
             </TabsList>
-            <TabsContent value="overview" className="space-y-4">
+            {/* <TabsContent value="overview" className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
                 <Card className="col-span-4">
                   <CardHeader>
@@ -76,7 +76,7 @@ export default function Dashboard() {
                   </CardContent>
                 </Card>
               </div>
-            </TabsContent>
+            </TabsContent> */}
             <TabsContent value="category" className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
                 <Card className="col-span-4">
