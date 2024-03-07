@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
@@ -10,9 +11,11 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "./ui/collapsible";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 interface SidebarProps extends React.HTMLAttributes<HTMLDivElement> {}
 
-type navigationLink = {
+export type navigationLink = {
   name: string;
   href: string;
   disabled?: boolean;
@@ -67,19 +70,23 @@ export const navigationLinks: navigationLink[] = [
   },
   {
     name: "Interventional Oncology",
-    href: "/arterial",
+    href: "/io",
   },
   {
     name: "Vascular anomalies",
-    href: "/arterial",
+    href: "/va",
   },
   {
     name: "MR guided interventions",
-    href: "/arterial",
+    href: "/mrir",
   },
 ];
 
 export function Sidebar({ className }: SidebarProps) {
+  const [active, setActive] = useState("");
+  const pathname = usePathname();
+
+  console.log(pathname);
   return (
     <div className={cn("pb-12", className)}>
       <div className="space-y-4 py-4">
@@ -111,10 +118,12 @@ export function Sidebar({ className }: SidebarProps) {
               .map((link) => (
                 <Button
                   key={link.name}
-                  variant="ghost"
+                  variant={pathname == link.href ? "default" : "ghost"}
                   className="w-full justify-start"
                 >
-                  <Link href={link.href}>{link.name}</Link>
+                  <Link replace href={link.href}>
+                    {link.name}
+                  </Link>
                 </Button>
               ))}
             <Button variant="ghost" disabled className="w-full justify-start ">
@@ -126,10 +135,12 @@ export function Sidebar({ className }: SidebarProps) {
               .map((link) => (
                 <Button
                   key={link.name}
-                  variant="ghost"
+                  variant={pathname == link.href ? "default" : "ghost"}
                   className="w-full justify-start"
                 >
-                  <Link href={link.href}>{link.name}</Link>
+                  <Link replace href={link.href}>
+                    {link.name}
+                  </Link>
                 </Button>
               ))}
           </div>

@@ -28,16 +28,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function IR() {
+export default function IO() {
   const tasksNeuro = tasks.filter(
-    (task) => task.category === "Neurointervention"
+    (task) => task.category === "Interventional Oncology"
   );
   return (
     <>
       <div className="col-span-3 lg:col-span-4 lg:border-l">
         <div className="h-full px-4 py-6 lg:px-8">
           <h2 className="text-2xl font-semibold tracking-tight my-4">
-            Vascular procedures (Tier A)
+            Interventional Oncology procedures
           </h2>
           <Tabs defaultValue="progress" className="h-full space-y-6">
             <div className="space-between flex items-center">

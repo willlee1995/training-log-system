@@ -1,3 +1,4 @@
+"use client";
 import { PlusCircledIcon } from "@radix-ui/react-icons";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -20,6 +21,9 @@ import { logSchema } from "@/data/schema";
 import tasks from "@/data/tasks.json";
 import Link from "next/link";
 import path from "path";
+import { usePathname } from "next/navigation";
+import { navigationLinks } from "@/components/sidebar";
+import { getNavigationLinkName } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "IR Training Log Book",
   description: "HKCR IR subspeciality training log Book",
@@ -27,17 +31,17 @@ export const metadata: Metadata = {
     icon: "/favicon.png",
   },
 };
-
-export default function IR() {
+export default function VA() {
+  const pathname = usePathname();
   const tasksNeuro = tasks.filter(
-    (task) => task.category === "Neurointervention"
+    (task) => task.category === getNavigationLinkName(pathname, navigationLinks)
   );
   return (
     <>
       <div className="col-span-3 lg:col-span-4 lg:border-l">
         <div className="h-full px-4 py-6 lg:px-8">
           <h2 className="text-2xl font-semibold tracking-tight my-4">
-            Vascular procedures (Tier A)
+            {getNavigationLinkName(pathname, navigationLinks)}
           </h2>
           <Tabs defaultValue="progress" className="h-full space-y-6">
             <div className="space-between flex items-center">

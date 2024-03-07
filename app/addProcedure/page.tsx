@@ -5,6 +5,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "IR Training Log Book - Add Procedure",
   description: "HKCR IR subspeciality training log Book",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 export default function SettingsProfilePage() {
   return (

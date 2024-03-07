@@ -1,3 +1,4 @@
+"use client";
 import { PlusCircledIcon } from "@radix-ui/react-icons";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -16,23 +17,31 @@ import { columns } from "@/components/table/columns";
 import { listenNowAlbums, madeForYouAlbums } from "@/data/albums";
 import { playlists } from "@/data/playlists";
 import { logSchema } from "@/data/schema";
-
+import { usePathname } from "next/navigation";
+import { navigationLinks } from "@/components/sidebar";
+import { getNavigationLinkName } from "@/lib/utils";
 import tasks from "@/data/tasks.json";
 import Link from "next/link";
 import path from "path";
 export const metadata: Metadata = {
   title: "IR Training Log Book",
   description: "HKCR IR subspeciality training log Book",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function Arterial() {
-  const tasksNeuro = tasks.filter((task) => task.category === "arterial");
+  const pathname = usePathname();
+  const tasksNeuro = tasks.filter(
+    (task) => task.category === getNavigationLinkName(pathname, navigationLinks)
+  );
   return (
     <>
       <div className="col-span-3 lg:col-span-4 lg:border-l">
         <div className="h-full px-4 py-6 lg:px-8">
           <h2 className="text-2xl font-semibold tracking-tight my-4">
-            Arterial procedures
+            {getNavigationLinkName(pathname, navigationLinks)}
           </h2>
           <Tabs defaultValue="progress" className="h-full space-y-6">
             <div className="space-between flex items-center">

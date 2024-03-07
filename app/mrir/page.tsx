@@ -28,16 +28,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function IR() {
-  const tasksNeuro = tasks.filter(
-    (task) => task.category === "Neurointervention"
-  );
+export default function MRIR() {
+  const tasksNeuro = tasks.filter((task) => task.category === "MR IR");
   return (
     <>
       <div className="col-span-3 lg:col-span-4 lg:border-l">
         <div className="h-full px-4 py-6 lg:px-8">
           <h2 className="text-2xl font-semibold tracking-tight my-4">
-            Vascular procedures (Tier A)
+            MR guided procedures
           </h2>
           <Tabs defaultValue="progress" className="h-full space-y-6">
             <div className="space-between flex items-center">

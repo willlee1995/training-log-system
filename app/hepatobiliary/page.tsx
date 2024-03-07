@@ -22,7 +22,10 @@ import Link from "next/link";
 import path from "path";
 export const metadata: Metadata = {
   title: "IR Training Log Book",
-  description: "HKCR IR subspeciality training log system",
+  description: "HKCR IR subspeciality training log Book",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function Hepatobiliary() {
@@ -32,7 +35,7 @@ export default function Hepatobiliary() {
       <div className="col-span-3 lg:col-span-4 lg:border-l">
         <div className="h-full px-4 py-6 lg:px-8">
           <h2 className="text-2xl font-semibold tracking-tight my-4">
-            Neurointerventional procedures
+            Hepatobiliary procedures
           </h2>
           <Tabs defaultValue="progress" className="h-full space-y-6">
             <div className="space-between flex items-center">

@@ -22,7 +22,10 @@ import Link from "next/link";
 import path from "path";
 export const metadata: Metadata = {
   title: "IR Training Log Book",
-  description: "HKCR IR subspeciality training log system",
+  description: "HKCR IR subspeciality training log Book",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function Musculoskeletal() {

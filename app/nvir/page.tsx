@@ -23,6 +23,9 @@ import path from "path";
 export const metadata: Metadata = {
   title: "IR Training Log Book",
   description: "HKCR IR subspeciality training log Book",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function IR() {
