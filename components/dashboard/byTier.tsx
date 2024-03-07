@@ -10,14 +10,15 @@ import {
 } from "recharts";
 
 const data = [
-  { tier: "A", nvir: 240, ir: 80, target: 360 },
+  { Category: "NVIR", current: 120 },
   {
-    tier: "B",
-    msk: 82,
-    onco: 63,
-    nir: 33,
-    paed: 65,
+    Category: "IR",
+    current: 80,
+  },
+  {
+    Category: "Subtotal",
     target: 360,
+    current: 200,
   },
 ];
 
@@ -36,22 +37,13 @@ export function ByTier() {
         }}
       >
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="tier" />
+        <XAxis dataKey="Category" />
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey="nvir" name="Non-Vascular" stackId="a" fill="#8884d8" />
-        <Bar dataKey="ir" name="Vascular" stackId="a" fill="#82ca9d" />
-        <Bar dataKey="nir" name="Neuro-IR" stackId="a" fill="#CADBC0" />
-        <Bar dataKey="msk" name="MSK" stackId="a" fill="#C94277" />
-        <Bar
-          dataKey="onco"
-          name="Interventional Oncology"
-          stackId="a"
-          fill="#A27E6F"
-        />
-        <Bar dataKey="paed" name="Paediatric" stackId="a" fill="#82ca9d" />
-        <Bar dataKey="target" fill="#2F0A28" />
+        <Bar dataKey="current" fill="#8884d8" barSize={40} />
+
+        <Bar dataKey="target" fill="#8884d8" barSize={0} />
       </BarChart>
     </ResponsiveContainer>
   );

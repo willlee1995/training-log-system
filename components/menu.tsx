@@ -23,7 +23,7 @@ export function Menu() {
       <SideDrawer></SideDrawer>
       <MenubarMenu>
         <MenubarTrigger className="font-bold">
-          <Link href="/">IR subspeciality Log System</Link>
+          <Link href="/">IR subspeciality Log Book</Link>
         </MenubarTrigger>
       </MenubarMenu>
       <div className="ml-auto">

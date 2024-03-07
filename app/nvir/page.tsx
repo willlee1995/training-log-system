@@ -21,8 +21,8 @@ import tasks from "@/data/tasks.json";
 import Link from "next/link";
 import path from "path";
 export const metadata: Metadata = {
-  title: "IR Training Log System",
-  description: "HKCR IR subspeciality training log system",
+  title: "IR Training Log Book",
+  description: "HKCR IR subspeciality training log Book",
 };
 
 export default function IR() {

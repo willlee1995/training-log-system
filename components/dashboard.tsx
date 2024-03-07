@@ -1,15 +1,10 @@
 "use client";
 import { Metadata } from "next";
 import Image from "next/image";
-
 import { ByCategory } from "@/components/dashboard/byCategory";
 import { ByTier } from "@/components/dashboard/byTier";
 import { CalendarDateRangePicker } from "@/components/dashboard/date-range-picker";
-import { MainNav } from "@/components/dashboard/main-nav";
-import { Overview } from "@/components/dashboard/overview";
-import { RecentSales } from "@/components/dashboard/recent-sales";
 import { Search } from "@/components/dashboard/search";
-import TeamSwitcher from "@/components/dashboard/team-switcher";
 import { UserNav } from "@/components/dashboard/user-nav";
 import { Button } from "@/components/ui/button";
 import {
@@ -26,6 +21,63 @@ export const metadata: Metadata = {
   description: "Example dashboard app built using the components.",
 };
 
+const dataForTierA = [
+  {
+    category: "Neuro-IR",
+    Current: 10,
+  },
+  {
+    category: "Arterial IR",
+    Current: 80,
+  },
+  {
+    category: "Venous&Dialysis IR",
+    Current: 82,
+  },
+  {
+    category: "Thoracic IR",
+    Current: 63,
+  },
+  {
+    category: "GI IR",
+    Current: 33,
+  },
+  {
+    category: "Urogenital IR",
+    Current: 65,
+    Target: 360,
+  },
+  {
+    category: "MSK IR",
+    Current: 65,
+    Target: 360,
+  },
+  {
+    category: "Paed IR",
+    Current: 65,
+    Target: 360,
+  },
+  {
+    category: "Oncology IR",
+    Current: 65,
+    Target: 360,
+  },
+  {
+    category: "Vascular Anomalies",
+    Current: 65,
+    Target: 360,
+  },
+  {
+    category: "MR guided IR",
+    Current: 65,
+    Target: 360,
+  },
+  {
+    category: "Subtotal",
+    Current: 65,
+    Target: 360,
+  },
+];
 export default function Dashboard() {
   return (
     <>
@@ -64,16 +116,25 @@ export default function Dashboard() {
               </div>
             </TabsContent> */}
             <TabsContent value="category" className="space-y-4">
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                 <Card className="col-span-4">
                   <CardHeader>
-                    <CardTitle>Overview</CardTitle>
+                    <CardTitle>Tier A</CardTitle>
+                  </CardHeader>
+                  <CardContent className="pl-2">
+                    <ByTier />
+                  </CardContent>
+                </Card>
+                <Card className="col-span-4">
+                  <CardHeader>
+                    <CardTitle>Tier B</CardTitle>
                   </CardHeader>
                   <CardContent className="pl-2">
                     <ByCategory />
                   </CardContent>
                 </Card>
               </div>
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4"></div>
             </TabsContent>
           </Tabs>
         </div>

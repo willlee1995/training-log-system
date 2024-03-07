@@ -9,40 +9,66 @@ import {
   YAxis,
 } from "recharts";
 
-const data = [
+const dataPre = [
   {
-    category: "Non-vascular",
-    Current: 240,
-    Target: 360,
+    category: "Neuro-IR",
+    Current: 10,
   },
   {
-    category: "Vascular",
-    Current: 80,
-    Target: 360,
+    category: "Arterial IR",
+    Current: 15,
   },
   {
-    category: "Musculoskeletal",
-    Current: 82,
-    Target: 360,
+    category: "Venous&Dialysis IR",
+    Current: 20,
   },
   {
-    category: "Oncology",
-    Current: 63,
-    Target: 360,
+    category: "Thoracic IR",
+    Current: 10,
   },
   {
-    category: "Neurointervention",
-    Current: 33,
-    Target: 360,
+    category: "GI IR",
+    Current: 25,
   },
   {
-    category: "Paediatric",
-    Current: 65,
-    Target: 360,
+    category: "Urogenital IR",
+    Current: 30,
+  },
+  {
+    category: "MSK IR",
+    Current: 1,
+  },
+  {
+    category: "Paed IR",
+    Current: 25,
+  },
+  {
+    category: "Oncology IR",
+    Current: 12,
+  },
+  {
+    category: "Vascular Anomalies",
+    Current: 6,
+  },
+  {
+    category: "MR guided IR",
+    Current: 1,
   },
 ];
+const dataForSubtotal = {
+  category: "Subtotal",
+  //@ts-ignore
+  Current: dataPre.reduce((acc, item) => {
+    return acc + item.Current;
+  }, 0),
+  Target: 240,
+};
+
+const data = [...dataPre, dataForSubtotal];
 
 export function ByCategory() {
+  //@ts-ignore
+  console.log(dataPre.reduce((acc, curr) => acc.Current + curr, 0));
   return (
     <ResponsiveContainer width="100%" height={350}>
       <BarChart
@@ -61,7 +87,8 @@ export function ByCategory() {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey="Current" fill="#8884d8" />
+        <Bar dataKey="Current" fill="#8884d8" barSize={100} />
+        <Bar dataKey="Target" fill="#8884d8" barSize={0} />
       </BarChart>
     </ResponsiveContainer>
   );

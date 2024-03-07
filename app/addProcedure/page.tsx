@@ -3,8 +3,8 @@ import { Separator } from "@/components/ui/separator";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "IR Training Log System - Add Procedure",
-  description: "HKCR IR subspeciality training log system",
+  title: "IR Training Log Book - Add Procedure",
+  description: "HKCR IR subspeciality training log Book",
 };
 export default function SettingsProfilePage() {
   return (
