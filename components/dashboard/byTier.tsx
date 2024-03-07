@@ -40,9 +40,7 @@ export function ByTier() {
         <XAxis dataKey="Category" />
         <YAxis />
         <Tooltip />
-        <Legend />
         <Bar dataKey="current" fill="#8884d8" barSize={40} />
-
         <Bar dataKey="target" fill="#8884d8" barSize={0} />
       </BarChart>
     </ResponsiveContainer>

@@ -86,7 +86,6 @@ export function ByCategory() {
         <XAxis dataKey="category" />
         <YAxis />
         <Tooltip />
-        <Legend />
         <Bar dataKey="Current" fill="#8884d8" barSize={100} />
         <Bar dataKey="Target" fill="#8884d8" barSize={0} />
       </BarChart>
