@@ -4,6 +4,7 @@ import {
   CartesianGrid,
   Legend,
   ResponsiveContainer,
+  Text,
   Tooltip,
   XAxis,
   YAxis,
@@ -86,8 +87,9 @@ export function ByCategory() {
         <XAxis dataKey="category" />
         <YAxis />
         <Tooltip />
-        <Bar dataKey="Current" fill="#8884d8" barSize={100} />
-        <Bar dataKey="Target" fill="#8884d8" barSize={0} />
+        <Bar dataKey="Current" fill="#f97316" barSize={100} />
+        <Bar dataKey="Target" fill="#f97316" barSize={0} />
+        <Text>Hello</Text>
       </BarChart>
     </ResponsiveContainer>
   );
