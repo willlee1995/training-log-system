@@ -57,7 +57,7 @@ export const categories = [
     icon: QuestionMarkCircledIcon,
   },
   {
-    value: "Paediatric",
+    value: "paediatric",
     label: "Paediatric interventions",
     icon: QuestionMarkCircledIcon,
   },
@@ -77,13 +77,18 @@ export const categories = [
     icon: QuestionMarkCircledIcon,
   },
   {
-    value: "Non-vascular",
+    value: "NVIR",
     label: "Non-Vascular",
     icon: QuestionMarkCircledIcon,
   },
   {
-    value: "Vascular",
+    value: "IR",
     label: "Vascular",
+    icon: Syringe,
+  },
+  {
+    value: "gi",
+    label: "Gastro-intestinal procedures",
     icon: Syringe,
   },
 ];

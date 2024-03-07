@@ -12,7 +12,7 @@ import {
   CollapsibleTrigger,
 } from "./ui/collapsible";
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 interface SidebarProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export type navigationLink = {
@@ -20,73 +20,88 @@ export type navigationLink = {
   href: string;
   disabled?: boolean;
   tier?: "A" | "B";
+  category?: string;
 };
 export const navigationLinks: navigationLink[] = [
   {
     name: "Non-Vascular",
-    href: "/nvir",
+    href: "/views?category=nvir",
     tier: "A",
+    category: "Non-vascular",
   },
   {
     name: "Vascular",
-    href: "/ir",
+    href: "/views?category=ir",
     tier: "A",
+    category: "Vascular",
   },
   {
     name: "Neurointerventional procedures",
-    href: "/neuro",
+    href: "/views?category=neuro",
+    category: "Neurointervention",
   },
   {
     name: "Arterial interventional procedures",
-    href: "/arterial",
+    href: "/views?category=arterial",
+    category: "Arterial",
   },
   {
     name: "Venous and dialysis access interventions",
-    href: "/venous",
+    href: "/views?category=venous",
+    category: "Venous",
   },
   {
     name: "Hepatobiliary interventions",
-    href: "/hepatobiliary",
+    href: "/views?category=hepatobiliary",
+    category: "Hepatobiliary",
   },
   {
     name: "Thoracic interventions",
-    href: "/thoracic",
+    href: "/views?category=thoracic",
+    category: "Thoracic",
   },
   {
     name: "Gastro-intestinal intervention",
-    href: "/gi",
+    href: "/views?category=gi",
+    category: "gi",
   },
   {
     name: "Urogenital interventions",
-    href: "/urogenital",
+    href: "/views?category=urogenital",
+    category: "Urogenital",
   },
   {
     name: "Musculoskeletal interventions",
-    href: "/msk",
+    href: "/views?category=msk",
+    category: "Thoracic",
   },
   {
     name: "Paediatric interventions",
-    href: "/paed",
+    href: "/views?category=paed",
+    category: "paediatric",
   },
   {
     name: "Interventional Oncology",
-    href: "/io",
+    href: "/views?category=io",
+    category: "Oncology",
   },
   {
     name: "Vascular anomalies",
-    href: "/va",
+    href: "/views?category=va",
+    category: "VA",
   },
   {
     name: "MR guided interventions",
-    href: "/mrir",
+    href: "/views?category=mrir",
+    category: "MR",
   },
 ];
 
 export function Sidebar({ className }: SidebarProps) {
-  const [active, setActive] = useState("");
+  const searchParams = useSearchParams();
   const pathname = usePathname();
+  const category = searchParams.get("category");
 
-  console.log(pathname);
   return (
     <div className={cn("pb-12", className)}>
       <div className="space-y-4 py-4">
@@ -118,7 +133,11 @@ export function Sidebar({ className }: SidebarProps) {
               .map((link) => (
                 <Button
                   key={link.name}
-                  variant={pathname == link.href ? "default" : "ghost"}
+                  variant={
+                    `${pathname}?category=${category}` == link.href
+                      ? "default"
+                      : "ghost"
+                  }
                   className="w-full justify-start"
                 >
                   <Link replace href={link.href}>
@@ -135,7 +154,11 @@ export function Sidebar({ className }: SidebarProps) {
               .map((link) => (
                 <Button
                   key={link.name}
-                  variant={pathname == link.href ? "default" : "ghost"}
+                  variant={
+                    `${pathname}?category=${category}` == link.href
+                      ? "default"
+                      : "ghost"
+                  }
                   className="w-full justify-start"
                 >
                   <Link replace href={link.href}>
