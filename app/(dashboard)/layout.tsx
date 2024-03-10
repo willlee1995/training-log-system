@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import React from "react";
-import "./globals.css";
+import "../globals.css";
 
 import { Plus } from "lucide-react";
 import { headers } from "next/headers";
@@ -33,8 +33,27 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
-
+          <div className="md:block">
+            <Menu />
+            <div className="border-t">
+              <div className="bg-background">
+                <div className="grid grid-cols-1 lg:grid-cols-5">
+                  <Sidebar className="hidden lg:block" />
+                  {children}
+                  {header_url !== "/addProcedure" && (
+                    <Button
+                      className="lg:hidden fixed z-90 bottom-10 right-8 !rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:drop-shadow-2xl"
+                      asChild
+                    >
+                      <Link href="/addProcedure">
+                        <Plus />
+                      </Link>
+                    </Button>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
           <Toaster />
         </ThemeProvider>
       </body>

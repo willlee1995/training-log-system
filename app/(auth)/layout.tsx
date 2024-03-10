@@ -7,13 +7,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import React from "react";
-import "./globals.css";
+import "../globals.css";
 
 import { Plus } from "lucide-react";
 import { headers } from "next/headers";
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
-  title: "IR Training Log Book",
+  title: "IR Training Log Book ",
   description: "HKCR IR subspeciality training log system",
   icons: {
     icon: "/favicon.png",
