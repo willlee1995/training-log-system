@@ -1,47 +1,19 @@
-"use client";
 import { PlusCircledIcon } from "@radix-ui/react-icons";
-import { Metadata } from "next";
-import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { Separator } from "@/components/ui/separator";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { z } from "zod";
+import { Tabs } from "@/components/ui/tabs";
 
-import { AlbumArtwork } from "@/components/album-artwork";
-import Dashboard from "@/components/dashboard";
-import { DataTable } from "@/components/data-table";
-import { PodcastEmptyPlaceholder } from "@/components/podcast-empty-placeholder";
-import { columns } from "@/components/table/columns";
-import { listenNowAlbums, madeForYouAlbums } from "@/data/albums";
-import { playlists } from "@/data/playlists";
-import { logSchema } from "@/data/schema";
-
-import tasks from "@/data/tasks.json";
+import Title from "@/components/table/title";
+import WrappedDataTable from "@/components/table/wrapped-data-table";
 import Link from "next/link";
-import path from "path";
-import { usePathname, useSearchParams } from "next/navigation";
-import { navigationLinks } from "@/components/sidebar";
-import { getNavigationLinkCategory, getNavigationLinkName } from "@/lib/utils";
 
 export default function Neuro() {
-  const searchParams = useSearchParams();
-  const pathname = usePathname();
-  const category = searchParams.get("category");
-  const tasksNeuro = tasks.filter(
-    (task) =>
-      task.category ===
-      getNavigationLinkCategory(pathname, navigationLinks, category)
-  );
   return (
     <>
       <link rel="icon" href="/favicon.png" sizes="any" />
       <div className="col-span-3 lg:col-span-4 lg:border-l">
         <div className="h-full px-4 py-6 lg:px-8">
-          <h2 className="text-2xl font-semibold tracking-tight my-4">
-            {getNavigationLinkName(pathname, navigationLinks, category)}
-          </h2>
+          <Title />
           <Tabs defaultValue="progress" className="h-full space-y-6">
             <div className="space-between flex items-center">
               <div className="ml-auto mr-4">
@@ -54,7 +26,7 @@ export default function Neuro() {
               </div>
             </div>
 
-            <DataTable data={tasksNeuro} columns={columns} />
+            <WrappedDataTable />
           </Tabs>
         </div>
       </div>
